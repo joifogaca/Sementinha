@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E529FFC-FAE5-4862-8EC8-85DC73A3E039}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sementinha</RootNamespace>
+    <AssemblyName>Sementinha</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AFDAL.cs" />
+    <Compile Include="ALDAL.cs" />
+    <Compile Include="Erro.cs" />
+    <Compile Include="Classes\Escolaridades.cs" />
+    <Compile Include="Classes\Escolas.cs" />
+    <Compile Include="Classes\Família.cs" />
+    <Compile Include="Classes\Frequentadores.cs" />
+    <Compile Include="Formulários\frmFrequentadoresFicha_CriançaIHM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\frmFrequentadoresFicha_CriançaIHM.Designer.cs">
+      <DependentUpon>frmFrequentadoresFicha_CriançaIHM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\frmFrequentadoresIHM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\frmFrequentadoresIHM.Designer.cs">
+      <DependentUpon>frmFrequentadoresIHM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\frmTipos_CadastrosFichaIHM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\frmTipos_CadastrosFichaIHM.designer.cs">
+      <DependentUpon>frmTipos_CadastrosFichaIHM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulários\frmTipos_CadastrosIHM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\frmTipos_CadastrosIHM.designer.cs">
+      <DependentUpon>frmTipos_CadastrosIHM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funções.cs" />
+    <Compile Include="INI.cs" />
+    <Compile Include="Formulários\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulários\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Parentescos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection.cs" />
+    <Compile Include="Classes\Tipos_Cadastros.cs" />
+    <EmbeddedResource Include="Formulários\frmFrequentadoresFicha_CriançaIHM.resx">
+      <DependentUpon>frmFrequentadoresFicha_CriançaIHM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\frmFrequentadoresIHM.resx">
+      <DependentUpon>frmFrequentadoresIHM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\frmTipos_CadastrosFichaIHM.resx">
+      <DependentUpon>frmTipos_CadastrosFichaIHM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulários\frmTipos_CadastrosIHM.resx">
+      <DependentUpon>frmTipos_CadastrosIHM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

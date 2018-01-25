@@ -1,0 +1,12 @@
+C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\bin\Debug\Sementinha.exe
+C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\bin\Debug\Sementinha.pdb
+C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.Properties.Resources.resources
+C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.csproj.GenerateResource.Cache
+C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.exe
+C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.pdb
+C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.frmMain.resources
+C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.csprojResolveAssemblyReference.cache
+C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.frmFrequentadoresFicha_CriançaIHM.resources
+C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.frmFrequentadoresIHM.resources
+C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.frmTipos_CadastrosFicha_CriançaIHM.resources
+C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.frmTipos_CadastrosIHM.resources
