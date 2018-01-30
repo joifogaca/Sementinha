@@ -9,18 +9,20 @@ namespace Sementinha
 {
     class ALDAL
     {
-        public static void insereDados_Genérico(string Tabela, string Parâmetros, string Valores)
+        public static void atualizaDados_Genérico(string Tabela, string Valores, string Where)
         {
             string TextoSQL;
-            
-            TextoSQL = "SET QUOTED_IDENTIFIER OFF " +
-                       "EXECUTE Principal_IN_Genérico " +
-                       '\u0022' + Tabela + '\u0022' + 
-                       ", \" " + Parâmetros + " \" " +
-                       ", \" " + Valores + " \" " +
-                       " SET QUOTED_IDENTIFIER ON";
 
-            TextoSQL.Replace('\\', ' ');
+            TextoSQL = "UPDATE " + Tabela + " SET " + Valores + " WHERE " + Where;
+
+            AFDAL.ExecuteNonQuery(TextoSQL);  
+        }
+
+        public static void insereDados_Genérico(string Tabela, string Parâmetros, string Valores)
+        {
+            string TextoSQL;            
+
+            TextoSQL = "INSERT INTO " + Tabela + "(" + Parâmetros + ") VALUES(" + Valores + ")";
 
             AFDAL.ExecuteNonQuery(TextoSQL);            
         }
@@ -63,6 +65,7 @@ namespace Sementinha
             AFDAL.LêUmRegistro(Classe_Genérica);
         }
 
+        // NÃO ESTÁ SENDO UTILIZADO
         public static void gravaDados_Genérico(object Classe_Genérica, string Status) // Este método pegará todos os dados do formulário a partir de um objecto de uma classe instanciada e incluirá na tabela
         {
             string TextoSQL;

@@ -116,7 +116,7 @@ namespace Sementinha
                         Propriedade_Genérica = Classe_Genérica.GetType().GetProperty("" + drSementinha.GetName(i));
 
                         // seta o valor na classe
-                        Reflection.IN_Propriedade_Genérico(Propriedade_Genérica, drSementinha.GetValue(i));
+                        Reflection_Classe.IN_Propriedade_Genérico(Propriedade_Genérica, drSementinha.GetValue(i),Classe_Genérica);
                     }
                 }
                 else

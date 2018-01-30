@@ -58,7 +58,6 @@
             this.panFREQUENTADORES.Size = new System.Drawing.Size(644, 428);
             this.panFREQUENTADORES.TabIndex = 1;
             this.panFREQUENTADORES.Tag = "";
-        
             // 
             // dgvFREQUENTADORES
             // 
@@ -119,6 +118,7 @@
             this.btnFREQUENTADORESconsultar.Text = "Consultar";
             this.btnFREQUENTADORESconsultar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnFREQUENTADORESconsultar.UseVisualStyleBackColor = true;
+            this.btnFREQUENTADORESconsultar.Click += new System.EventHandler(this.btnFREQUENTADORESconsultar_Click);
             // 
             // btnFREQUENTADORESalterar
             // 

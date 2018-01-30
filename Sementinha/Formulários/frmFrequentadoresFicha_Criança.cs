@@ -10,7 +10,7 @@ using System.Reflection;
 
 namespace Sementinha
 {
-    public partial class frmFrequentadoresFicha_CriançaIHM : Form
+    public partial class frmFrequentadoresFicha_Criança : Form
     {
         Frequentadores umFrequentador = new Frequentadores();
         private string status;
@@ -28,40 +28,26 @@ namespace Sementinha
             set { status = value; }
         }
          
-        public frmFrequentadoresFicha_CriançaIHM()
+        public frmFrequentadoresFicha_Criança()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void grpFREQUENTADORESsexo_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panFREQUENTADORESFicha_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnFREQUENTADORESok_Click(object sender, EventArgs e)
         {
+         //   FrequentadoresBLL.validaDados();
+
+            
             object Frequentadores_Criança;
 
             // Frequentadores_Criança recebe um objeto da classe Frequentadores 
-            Frequentadores_Criança =  Reflection.IN_Classe_Genérico(panFREQUENTADORESFicha);
+            Frequentadores_Criança =  Reflection_Classe.IN_Classe_Genérico(panFREQUENTADORESFicha);
             
             // Armazena os dados no banco de dados 
-            Reflection.IN_Formulário_Genérico(Frequentadores_Criança, "IN");
+            Reflection_Tabela.IN_Tabela_Genérico(Frequentadores_Criança);
+
+            //Fecha o formulário
+            this.Close();
 
         }
 
@@ -69,11 +55,20 @@ namespace Sementinha
         {       
             if (Status == "A")
             {                 
-                umFrequentador = (Frequentadores)Reflection.RT_Formulário_Genérico(Código,"Frequentadores");
-                Reflection.Attr_Formulário_Genérico(panFREQUENTADORESFicha, umFrequentador);
+                umFrequentador = (Frequentadores)Reflection_Tabela.RT_Tabela_Genérico(Código,"Frequentadores");
+                Reflection_Formulário.Attr_Formulário_Genérico(panFREQUENTADORESFicha, umFrequentador);
             }
         }
-          
+
+        private void panFREQUENTADORESFicha_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnFREQUENTADORESpesquisar_nome_mãe_Click(object sender, EventArgs e)
+        {
+
+        }        
           
 
        

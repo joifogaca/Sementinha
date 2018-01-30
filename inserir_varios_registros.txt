@@ -1,0 +1,4 @@
+ for (int i = 20; i < 32000; i++ )
+            {
+                AFDAL.ExecuteNonQuery("INSERT INTO Tipos_Cadastros(Código,Nome) VALUES (" + i  + ",'Nome" + i + "')");
+            }

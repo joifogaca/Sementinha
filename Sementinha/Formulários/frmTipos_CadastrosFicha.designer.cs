@@ -1,6 +1,6 @@
 ﻿namespace Sementinha
 {
-    partial class frmTipos_CadastrosFicha_CriançaIHM
+    partial class frmTipos_CadastrosFicha
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panTIPOS_CADASTROSFicha = new System.Windows.Forms.Panel();
+            this.btnTIPOS_CADASTROSok = new System.Windows.Forms.Button();
             this.lblTIPOS_CADASTROSdescrição = new System.Windows.Forms.Label();
             this.txtTIPOS_CADASTROSdescrição = new System.Windows.Forms.TextBox();
             this.txtTIPOS_CADASTROScódigo = new System.Windows.Forms.TextBox();
             this.lblTIPOS_CADASTROScódigo = new System.Windows.Forms.Label();
-            this.btnTIPOS_CADASTROSok = new System.Windows.Forms.Button();
             this.panTIPOS_CADASTROSFicha.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +51,17 @@
             this.panTIPOS_CADASTROSFicha.Size = new System.Drawing.Size(460, 143);
             this.panTIPOS_CADASTROSFicha.TabIndex = 2;
             this.panTIPOS_CADASTROSFicha.Tag = "";
+     
+            // 
+            // btnTIPOS_CADASTROSok
+            // 
+            this.btnTIPOS_CADASTROSok.Location = new System.Drawing.Point(364, 73);
+            this.btnTIPOS_CADASTROSok.Name = "btnTIPOS_CADASTROSok";
+            this.btnTIPOS_CADASTROSok.Size = new System.Drawing.Size(75, 60);
+            this.btnTIPOS_CADASTROSok.TabIndex = 21;
+            this.btnTIPOS_CADASTROSok.Text = "Ok";
+            this.btnTIPOS_CADASTROSok.UseVisualStyleBackColor = true;
+            this.btnTIPOS_CADASTROSok.Click += new System.EventHandler(this.btnTIPOS_CADASTROSok_Click);
             // 
             // lblTIPOS_CADASTROSdescrição
             // 
@@ -85,16 +96,6 @@
             this.lblTIPOS_CADASTROScódigo.Size = new System.Drawing.Size(46, 14);
             this.lblTIPOS_CADASTROScódigo.TabIndex = 0;
             this.lblTIPOS_CADASTROScódigo.Text = "Código";
-            // 
-            // btnTIPOS_CADASTROSok
-            // 
-            this.btnTIPOS_CADASTROSok.Location = new System.Drawing.Point(364, 73);
-            this.btnTIPOS_CADASTROSok.Name = "btnTIPOS_CADASTROSok";
-            this.btnTIPOS_CADASTROSok.Size = new System.Drawing.Size(75, 60);
-            this.btnTIPOS_CADASTROSok.TabIndex = 21;
-            this.btnTIPOS_CADASTROSok.Text = "Ok";
-            this.btnTIPOS_CADASTROSok.UseVisualStyleBackColor = true;
-            this.btnTIPOS_CADASTROSok.Click += new System.EventHandler(this.btnTIPOS_CADASTROSok_Click);
             // 
             // frmTipos_CadastrosFicha_CriançaIHM
             // 
