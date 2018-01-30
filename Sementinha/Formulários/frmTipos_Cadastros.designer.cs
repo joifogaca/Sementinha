@@ -1,6 +1,6 @@
 ﻿namespace Sementinha
 {
-    partial class frmTipos_CadastrosIHM
+    partial class frmTipos_Cadastros
     {
         /// <summary>
         /// Required designer variable.

@@ -30,15 +30,15 @@ namespace Sementinha
         private void btnFrequentadores_Click(object sender, EventArgs e)
         {
           //  Funções.fncConverteControle_Classe("data_alteração");
-            frmFrequentadoresIHM frmFREQUENTADORES_1 = new frmFrequentadoresIHM();
-            frmFREQUENTADORES_1.Show();
+            frmFrequentadores frmFREQUENTADORES = new frmFrequentadores();
+            frmFREQUENTADORES.Show();
 
         }
 
         private void btnTipos_Cadastros_Click(object sender, EventArgs e)
         {
-            frmTipos_CadastrosIHM frmTipos_Cadastros_1 = new frmTipos_CadastrosIHM();
-            frmTipos_Cadastros_1.Show();
+            frmTipos_Cadastros frmTipos_Cadastros = new frmTipos_Cadastros();
+            frmTipos_Cadastros.Show();
         }
     }
 }

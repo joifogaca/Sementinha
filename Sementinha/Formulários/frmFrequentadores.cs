@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Sementinha
 {
-    public partial class frmFrequentadoresIHM : Form
+    public partial class frmFrequentadores : Form
     {
 
         //Frequentadores umFrequentador = new Frequentadores();
@@ -20,7 +20,7 @@ namespace Sementinha
         //    set { umFrequentador = value; }
         //}
 
-        public frmFrequentadoresIHM()
+        public frmFrequentadores()
         {
             InitializeComponent();
         }

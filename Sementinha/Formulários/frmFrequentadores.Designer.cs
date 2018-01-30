@@ -1,6 +1,6 @@
 ﻿namespace Sementinha
 {
-    partial class frmFrequentadoresIHM
+    partial class frmFrequentadores
     {
         /// <summary>
         /// Required designer variable.

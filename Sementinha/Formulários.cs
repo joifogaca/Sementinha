@@ -29,6 +29,9 @@ namespace Sementinha
             get { return nome_classe; }
             set { nome_classe = value; }
         }
-          
+
+        public Formulários()
+        {
+        }
     }
 }
