@@ -143,14 +143,15 @@
             this.btnTIPOS_CADASTROSincluir.UseVisualStyleBackColor = true;
             this.btnTIPOS_CADASTROSincluir.Click += new System.EventHandler(this.btn_genérico_Click);
             // 
-            // frmTipos_CadastrosIHM
+            // frmTipos_Cadastros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(644, 428);
             this.Controls.Add(this.panTIPOS_CADASTROS);
-            this.Name = "frmTipos_CadastrosIHM";
+            this.Name = "frmTipos_Cadastros";
             this.Text = "Tipos de Cadastros ";
+            this.Activated += new System.EventHandler(this.Tipos_CadastrosIHM_Load);
             this.Load += new System.EventHandler(this.Tipos_CadastrosIHM_Load);
             this.panTIPOS_CADASTROS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTIPOS_CADASTROS)).EndInit();

@@ -27,15 +27,13 @@ namespace Sementinha
         }
 
         private void Tipos_CadastrosFicha_CriançaIHM_Load(object sender, EventArgs e)
-        {
-            if (Reflection_BLL.Acha_Campo_Identity(formulário.Nome_classe) == "Código")
-            {
-                txtTIPOS_CADASTROScódigo.Enabled = false;
-            }
+        {         
+            
+            this.Text = Reflection_Formulário.Inicializa_Formulário_Genérico(panTIPOS_CADASTROSFicha, formulário);        
 
             if (formulário.Status != "I") 
             {     
-                // Carrega os campos dos formulários
+                // Carrega os valores dos campos dos formulários
                 Reflection_Formulário.Attr_Formulário_Genérico(panTIPOS_CADASTROSFicha,
                                                                Reflection_Tabela.RT_Tabela_Genérico(formulário.Código, formulário.Nome_classe));
             }
@@ -50,6 +48,9 @@ namespace Sementinha
                     break;
                 case "A":
                     Reflection_Tabela.UP_Tabela_Genérico(Reflection_Classe.IN_Classe_Genérico(panTIPOS_CADASTROSFicha), "Código");
+                    break;
+                case "E":
+                    Reflection_Tabela.EX_Tabela_Genérico(formulário);
                     break;
             }            
          

@@ -15,7 +15,7 @@ namespace Sementinha
         public static BindingSource LL_DataGrid_Genérico(string Parâmetros, string Tabela)
         {
             //Executa o select
-            ALDAL.selecionaDados_Genérico(Parâmetros, Tabela);
+            ALDAL.Seleciona_Registros_Genérico(Parâmetros, Tabela);
 
             BindingSource bdsGenérico = new BindingSource();
 
@@ -32,7 +32,7 @@ namespace Sementinha
             object Instância_Genérica;
 
             // Busca o registro na tabela
-            ALDAL.buscaDados_Genérico(Código, Tabela);
+            ALDAL.Busca_Registro_Genérico(Código, Tabela);
 
             // Instancia a classe
             Instância_Genérica = Reflection.InstanciaClasse(Tabela);
@@ -55,6 +55,11 @@ namespace Sementinha
                 }                   
             }
             return Instância_Genérica;
+        }
+
+        public static void EX_Tabela_Genérico(Formulários Formulário)
+        {
+            ALDAL.Exclui_Registro_Genérico(Formulário.Nome_classe, "Código=" + Formulário.Código);
         }
 
 
@@ -95,8 +100,8 @@ namespace Sementinha
             Parâmetros_Valores = Parâmetros_Valores.Substring(0, Parâmetros_Valores.Length - 1);
 
             //Finalmente atualiza o registro na tabela
-            ALDAL.atualizaDados_Genérico(Tabela, Parâmetros_Valores, TextoWHERE);
-        }
+            ALDAL.Atualiza_Registo_Genérico(Tabela, Parâmetros_Valores, TextoWHERE);
+        }      
 
         public static void IN_Tabela_Genérico(object Instância_Genérica)
         {  //Esse funciona no Frequentadores: ALDAL.gravaDados_Genérico(Classe_Genérica, Status);
@@ -130,7 +135,7 @@ namespace Sementinha
             Valores = Valores.Substring(0, Valores.Length - 1);
 
             //Finalmente insere o registro na tabela
-            ALDAL.insereDados_Genérico(Tabela, Parâmetros, Valores);
+            ALDAL.Insere_Registro_Genérico(Tabela, Parâmetros, Valores);
         }
 
         public static string Retorna_ValorPropriedade_Genérico(string Tipo_Propriedade, object Valor_Propriedade)
@@ -148,5 +153,8 @@ namespace Sementinha
 
             return Valor_Propriedade.ToString();
         }
+
+       
+
     }
 }

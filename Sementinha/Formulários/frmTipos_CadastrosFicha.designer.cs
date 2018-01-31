@@ -40,18 +40,17 @@
             // panTIPOS_CADASTROSFicha
             // 
             this.panTIPOS_CADASTROSFicha.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.panTIPOS_CADASTROSFicha.Controls.Add(this.btnTIPOS_CADASTROSok);
             this.panTIPOS_CADASTROSFicha.Controls.Add(this.lblTIPOS_CADASTROSdescrição);
             this.panTIPOS_CADASTROSFicha.Controls.Add(this.txtTIPOS_CADASTROSdescrição);
             this.panTIPOS_CADASTROSFicha.Controls.Add(this.txtTIPOS_CADASTROScódigo);
             this.panTIPOS_CADASTROSFicha.Controls.Add(this.lblTIPOS_CADASTROScódigo);
+            this.panTIPOS_CADASTROSFicha.Controls.Add(this.btnTIPOS_CADASTROSok);
             this.panTIPOS_CADASTROSFicha.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panTIPOS_CADASTROSFicha.Location = new System.Drawing.Point(0, 0);
             this.panTIPOS_CADASTROSFicha.Name = "panTIPOS_CADASTROSFicha";
             this.panTIPOS_CADASTROSFicha.Size = new System.Drawing.Size(460, 143);
             this.panTIPOS_CADASTROSFicha.TabIndex = 2;
             this.panTIPOS_CADASTROSFicha.Tag = "";
-     
             // 
             // btnTIPOS_CADASTROSok
             // 
@@ -97,13 +96,13 @@
             this.lblTIPOS_CADASTROScódigo.TabIndex = 0;
             this.lblTIPOS_CADASTROScódigo.Text = "Código";
             // 
-            // frmTipos_CadastrosFicha_CriançaIHM
+            // frmTipos_CadastrosFichaIHM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 143);
             this.Controls.Add(this.panTIPOS_CADASTROSFicha);
-            this.Name = "frmTipos_CadastrosFicha_CriançaIHM";
+            this.Name = "frmTipos_CadastrosFichaIHM";
             this.Text = "Tipos_CadastrosFichaIHM";
             this.Load += new System.EventHandler(this.Tipos_CadastrosFicha_CriançaIHM_Load);
             this.panTIPOS_CADASTROSFicha.ResumeLayout(false);

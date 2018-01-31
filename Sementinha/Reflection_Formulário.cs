@@ -84,7 +84,7 @@ namespace Sementinha
             ALDAL.LL_Genérico("*", Nome_Campo);
 
             // Lê o primeiro registro do Select
-            ALDAL.lêUm_Registro(Instância_Genérica);
+            ALDAL.Lê_Registro_Genérico(Instância_Genérica);
 
             while (Erro.getErro() == false)
             {
@@ -96,7 +96,7 @@ namespace Sementinha
                 ComboBox_Genérico.Items.Insert(Contador, Item_ComboBox);
 
                 // Lê o próximo registro do Select
-                ALDAL.lêUm_Registro(Instância_Genérica);
+                ALDAL.Lê_Registro_Genérico(Instância_Genérica);
 
                 Contador++;
             }
@@ -122,6 +122,58 @@ namespace Sementinha
                     RadioButton_Genérico.Checked = true;
                 }
                 break;
+            }
+        }
+            
+        public static string Inicializa_Formulário_Genérico(Panel Painel_Genérico, Formulários Formulário)
+        {          
+
+            if (Formulário.Status == "C" || Formulário.Status == "E")
+            {
+                Desabilita_Formulário_Genérico(Painel_Genérico);
+            }
+            else if (Formulário.Status == "A" || Formulário.Status == "I")
+            {
+                //Se o campo Código for Identity(auto-incremento), o campo deverá ser desabilitado
+                if (Reflection_BLL.Acha_Campo_Identity(Formulário.Nome_classe) == "Código")
+                {
+                    TextBox TextBox_Genérico = (TextBox)Painel_Genérico.Controls["txt" + Formulário.Nome_classe.ToUpper() + "código"];
+
+                    //Desabilita o textbox Código
+                    TextBox_Genérico.Enabled = false;
+                }
+            }
+            
+            return Altera_Caption_Formulário_Genérico(Formulário.Status) + " de cadastro";
+            
+        }
+
+        public static void Desabilita_Formulário_Genérico(Panel Painel_Genérico) //Desabilita todos os controles do formulário, MENOS os botões
+        {
+            for (int i = 0; i < Painel_Genérico.Controls.Count; i++)
+            {
+                //Apenas os botões do formulário permanecem habilitados
+                if (Painel_Genérico.Controls[i].GetType() != typeof(Button))
+                {
+                    //Desabilita o controle
+                    Painel_Genérico.Controls[i].Enabled = false;
+                }
+            }
+        }
+        public static string Altera_Caption_Formulário_Genérico(string Status)
+        {
+            switch (Status)
+            {
+                case "A":
+                    return "Alteração";
+                case "C":
+                    return "Consulta";
+                case "E":
+                    return "Exclusão";
+                case "I":
+                    return "Inclusão";
+                default:
+                    return "";
             }
         }
     }
