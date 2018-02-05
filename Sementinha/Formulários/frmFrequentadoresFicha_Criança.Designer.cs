@@ -1,6 +1,6 @@
 ﻿namespace Sementinha
 {
-    partial class frmFrequentadoresFicha_CriançaIHM
+    partial class frmFrequentadoresFicha_Criança
     {
         /// <summary>
         /// Required designer variable.
@@ -227,6 +227,7 @@
             this.btnFREQUENTADORESpesquisar_nome_mãe.TabIndex = 22;
             this.btnFREQUENTADORESpesquisar_nome_mãe.Text = "Pesquisar";
             this.btnFREQUENTADORESpesquisar_nome_mãe.UseVisualStyleBackColor = true;
+            this.btnFREQUENTADORESpesquisar_nome_mãe.Click += new System.EventHandler(this.btnFREQUENTADORESpesquisar_nome_mãe_Click);
             // 
             // txtFREQUENTADORESnome_pai
             // 
@@ -311,7 +312,6 @@
             this.grpFREQUENTADORESsexo.TabIndex = 21;
             this.grpFREQUENTADORESsexo.TabStop = false;
             this.grpFREQUENTADORESsexo.Text = "Sexo";
-            this.grpFREQUENTADORESsexo.Enter += new System.EventHandler(this.grpFREQUENTADORESsexo_Enter);
             // 
             // rdbFREQUENTADORESfeminino
             // 
@@ -468,7 +468,6 @@
             this.lblFREQUENTADORESnome.Size = new System.Drawing.Size(39, 14);
             this.lblFREQUENTADORESnome.TabIndex = 5;
             this.lblFREQUENTADORESnome.Text = "Nome";
-            this.lblFREQUENTADORESnome.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtFREQUENTADORESnome
             // 
@@ -501,7 +500,6 @@
             this.lblFREQUENTADOREScódigo.Size = new System.Drawing.Size(46, 14);
             this.lblFREQUENTADOREScódigo.TabIndex = 0;
             this.lblFREQUENTADOREScódigo.Text = "Código";
-            this.lblFREQUENTADOREScódigo.Click += new System.EventHandler(this.label1_Click);
             // 
             // frmFrequentadoresFicha_CriançaIHM
             // 

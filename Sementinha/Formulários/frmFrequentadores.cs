@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Sementinha
 {
-    public partial class frmFrequentadoresIHM : Form
+    public partial class frmFrequentadores : Form
     {
 
         //Frequentadores umFrequentador = new Frequentadores();
@@ -20,30 +20,30 @@ namespace Sementinha
         //    set { umFrequentador = value; }
         //}
 
-        public frmFrequentadoresIHM()
+        public frmFrequentadores()
         {
             InitializeComponent();
         }
 
         private void FrequentadoresIHM_Load(object sender, EventArgs e)
         {
-        
-            bdsFREQUENTADORES = Reflection.LL_DataGrid_Genérico("Código, Nome", "Frequentadores");
+            
+            bdsFREQUENTADORES = Reflection_Tabela.LL_DataGrid_Genérico("Código, Nome", "Frequentadores");
             dgvFREQUENTADORES.DataSource = bdsFREQUENTADORES;
          
         }
 
         private void btnFREQUENTADORESincluir_Click(object sender, EventArgs e)
         {
-            frmFrequentadoresFicha_CriançaIHM frmFREQUENTADORES_criança_incluir = new frmFrequentadoresFicha_CriançaIHM();
+            frmFrequentadoresFicha_Criança frmFREQUENTADORES_criança_incluir = new frmFrequentadoresFicha_Criança();
             frmFREQUENTADORES_criança_incluir.Show();
         }
 
         private void btnFREQUENTADORESalterar_Click(object sender, EventArgs e)
         {     
             // Cria uma instância do formulário
-            frmFrequentadoresFicha_CriançaIHM frmFREQUENTADORES_criança_alterar = new frmFrequentadoresFicha_CriançaIHM();
-
+            frmFrequentadoresFicha_Criança frmFREQUENTADORES_criança_alterar = new frmFrequentadoresFicha_Criança();
+            
             // Passa para o fomulário ficha o código do Frequentador a ser carregado
             frmFREQUENTADORES_criança_alterar.Código = Int64.Parse(dgvFREQUENTADORES[0, dgvFREQUENTADORES.CurrentCell.RowIndex].Value.ToString());
 
@@ -53,6 +53,11 @@ namespace Sementinha
             // Abre o formulário
             frmFREQUENTADORES_criança_alterar.Show();
             
+        }
+
+        private void btnFREQUENTADORESconsultar_Click(object sender, EventArgs e)
+        {
+
         }
 
        

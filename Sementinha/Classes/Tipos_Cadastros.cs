@@ -10,20 +10,21 @@ namespace Sementinha
 
         // SEMPRE COLOCAR AS PROPRIEDADES NA MESMA ORDEM QUE AS COLUNAS ESTÃO NA TABELA 
 
-        private static int código;
-        private static string descrição;
+        private int código;
+        private string descrição;       
   
-        public static int Código
+        public int Código
         {
-            get { return Tipos_Cadastros.código; }
-            set { Tipos_Cadastros.código = value; }
+            get { return código; }
+            set { código = value; }
         }
 
-        public static string Descrição
+        public string Descrição
         {
-            get { return Tipos_Cadastros.descrição; }
-            set { Tipos_Cadastros.descrição = value; }
+            get { return descrição; }
+            set { descrição = value; }
         }
+        
 
     }
 }

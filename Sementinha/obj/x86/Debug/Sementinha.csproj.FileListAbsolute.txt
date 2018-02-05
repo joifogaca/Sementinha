@@ -6,9 +6,16 @@ C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\
 C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.pdb
 C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.frmMain.resources
 C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.frmFrequentadoresFicha_CriançaIHM.resources
 C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.frmFrequentadoresIHM.resources
 C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.frmTipos_CadastrosFicha_CriançaIHM.resources
 C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.frmTipos_CadastrosIHM.resources
 C:\Users\joifo\OneDrive\Documentos\GitHub\Sementinha\Sementinha\obj\x86\Debug\Sementinha.exe
 C:\Users\joifo\OneDrive\Documentos\GitHub\Sementinha\Sementinha\obj\x86\Debug\Sementinha.pdb
+=======
+C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.frmFrequentadoresFicha_Criança.resources
+C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.frmFrequentadores.resources
+C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.frmTipos_Cadastros.resources
+C:\Users\emefr\Desktop\Emerson\PROJETO SEMENTINHA\Sementinha\Sementinha\obj\x86\Debug\Sementinha.frmTipos_CadastrosFichaIHM.resources
+>>>>>>> upstream/master

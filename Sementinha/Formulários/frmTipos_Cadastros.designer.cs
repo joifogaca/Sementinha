@@ -1,6 +1,6 @@
 ﻿namespace Sementinha
 {
-    partial class frmTipos_CadastrosIHM
+    partial class frmTipos_Cadastros
     {
         /// <summary>
         /// Required designer variable.
@@ -58,7 +58,6 @@
             this.panTIPOS_CADASTROS.Size = new System.Drawing.Size(644, 428);
             this.panTIPOS_CADASTROS.TabIndex = 1;
             this.panTIPOS_CADASTROS.Tag = "";
-            this.panTIPOS_CADASTROS.Paint += new System.Windows.Forms.PaintEventHandler(this.panTIPOS_CADASTROS_Paint);
             // 
             // dgvTIPOS_CADASTROS
             // 
@@ -109,6 +108,7 @@
             this.btnTIPOS_CADASTROSexcluir.Text = "Excluir";
             this.btnTIPOS_CADASTROSexcluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTIPOS_CADASTROSexcluir.UseVisualStyleBackColor = true;
+            this.btnTIPOS_CADASTROSexcluir.Click += new System.EventHandler(this.btn_genérico_Click);
             // 
             // btnTIPOS_CADASTROSconsultar
             // 
@@ -119,7 +119,7 @@
             this.btnTIPOS_CADASTROSconsultar.Text = "Consultar";
             this.btnTIPOS_CADASTROSconsultar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTIPOS_CADASTROSconsultar.UseVisualStyleBackColor = true;
-
+            this.btnTIPOS_CADASTROSconsultar.Click += new System.EventHandler(this.btn_genérico_Click);
             // 
             // btnTIPOS_CADASTROSalterar
             // 
@@ -130,7 +130,7 @@
             this.btnTIPOS_CADASTROSalterar.Text = "Alterar";
             this.btnTIPOS_CADASTROSalterar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTIPOS_CADASTROSalterar.UseVisualStyleBackColor = true;
-            this.btnTIPOS_CADASTROSalterar.Click += new System.EventHandler(this.btnTIPOS_CADASTROSalterar_Click);
+            this.btnTIPOS_CADASTROSalterar.Click += new System.EventHandler(this.btn_genérico_Click);
             // 
             // btnTIPOS_CADASTROSincluir
             // 
@@ -141,16 +141,17 @@
             this.btnTIPOS_CADASTROSincluir.Text = "Incluir";
             this.btnTIPOS_CADASTROSincluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTIPOS_CADASTROSincluir.UseVisualStyleBackColor = true;
-            this.btnTIPOS_CADASTROSincluir.Click += new System.EventHandler(this.btnTIPOS_CADASTROSincluir_Click);
+            this.btnTIPOS_CADASTROSincluir.Click += new System.EventHandler(this.btn_genérico_Click);
             // 
-            // frmTipos_CadastrosIHM
+            // frmTipos_Cadastros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(644, 428);
             this.Controls.Add(this.panTIPOS_CADASTROS);
-            this.Name = "frmTipos_CadastrosIHM";
+            this.Name = "frmTipos_Cadastros";
             this.Text = "Tipos de Cadastros ";
+            this.Activated += new System.EventHandler(this.Tipos_CadastrosIHM_Load);
             this.Load += new System.EventHandler(this.Tipos_CadastrosIHM_Load);
             this.panTIPOS_CADASTROS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTIPOS_CADASTROS)).EndInit();

@@ -1,6 +1,6 @@
 ﻿namespace Sementinha
 {
-    partial class frmTipos_CadastrosFicha_CriançaIHM
+    partial class frmTipos_CadastrosFichaIHM
     {
         /// <summary>
         /// Required designer variable.
@@ -29,28 +29,38 @@
         private void InitializeComponent()
         {
             this.panTIPOS_CADASTROSFicha = new System.Windows.Forms.Panel();
+            this.btnTIPOS_CADASTROSok = new System.Windows.Forms.Button();
             this.lblTIPOS_CADASTROSdescrição = new System.Windows.Forms.Label();
             this.txtTIPOS_CADASTROSdescrição = new System.Windows.Forms.TextBox();
             this.txtTIPOS_CADASTROScódigo = new System.Windows.Forms.TextBox();
             this.lblTIPOS_CADASTROScódigo = new System.Windows.Forms.Label();
-            this.btnTIPOS_CADASTROSok = new System.Windows.Forms.Button();
             this.panTIPOS_CADASTROSFicha.SuspendLayout();
             this.SuspendLayout();
             // 
             // panTIPOS_CADASTROSFicha
             // 
             this.panTIPOS_CADASTROSFicha.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.panTIPOS_CADASTROSFicha.Controls.Add(this.btnTIPOS_CADASTROSok);
             this.panTIPOS_CADASTROSFicha.Controls.Add(this.lblTIPOS_CADASTROSdescrição);
             this.panTIPOS_CADASTROSFicha.Controls.Add(this.txtTIPOS_CADASTROSdescrição);
             this.panTIPOS_CADASTROSFicha.Controls.Add(this.txtTIPOS_CADASTROScódigo);
             this.panTIPOS_CADASTROSFicha.Controls.Add(this.lblTIPOS_CADASTROScódigo);
+            this.panTIPOS_CADASTROSFicha.Controls.Add(this.btnTIPOS_CADASTROSok);
             this.panTIPOS_CADASTROSFicha.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panTIPOS_CADASTROSFicha.Location = new System.Drawing.Point(0, 0);
             this.panTIPOS_CADASTROSFicha.Name = "panTIPOS_CADASTROSFicha";
             this.panTIPOS_CADASTROSFicha.Size = new System.Drawing.Size(460, 143);
             this.panTIPOS_CADASTROSFicha.TabIndex = 2;
             this.panTIPOS_CADASTROSFicha.Tag = "";
+            // 
+            // btnTIPOS_CADASTROSok
+            // 
+            this.btnTIPOS_CADASTROSok.Location = new System.Drawing.Point(364, 73);
+            this.btnTIPOS_CADASTROSok.Name = "btnTIPOS_CADASTROSok";
+            this.btnTIPOS_CADASTROSok.Size = new System.Drawing.Size(75, 60);
+            this.btnTIPOS_CADASTROSok.TabIndex = 21;
+            this.btnTIPOS_CADASTROSok.Text = "Ok";
+            this.btnTIPOS_CADASTROSok.UseVisualStyleBackColor = true;
+            this.btnTIPOS_CADASTROSok.Click += new System.EventHandler(this.btnTIPOS_CADASTROSok_Click);
             // 
             // lblTIPOS_CADASTROSdescrição
             // 
@@ -86,23 +96,13 @@
             this.lblTIPOS_CADASTROScódigo.TabIndex = 0;
             this.lblTIPOS_CADASTROScódigo.Text = "Código";
             // 
-            // btnTIPOS_CADASTROSok
-            // 
-            this.btnTIPOS_CADASTROSok.Location = new System.Drawing.Point(364, 73);
-            this.btnTIPOS_CADASTROSok.Name = "btnTIPOS_CADASTROSok";
-            this.btnTIPOS_CADASTROSok.Size = new System.Drawing.Size(75, 60);
-            this.btnTIPOS_CADASTROSok.TabIndex = 21;
-            this.btnTIPOS_CADASTROSok.Text = "Ok";
-            this.btnTIPOS_CADASTROSok.UseVisualStyleBackColor = true;
-            this.btnTIPOS_CADASTROSok.Click += new System.EventHandler(this.btnTIPOS_CADASTROSok_Click);
-            // 
-            // frmTipos_CadastrosFicha_CriançaIHM
+            // frmTipos_CadastrosFichaIHM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 143);
             this.Controls.Add(this.panTIPOS_CADASTROSFicha);
-            this.Name = "frmTipos_CadastrosFicha_CriançaIHM";
+            this.Name = "frmTipos_CadastrosFichaIHM";
             this.Text = "Tipos_CadastrosFichaIHM";
             this.Load += new System.EventHandler(this.Tipos_CadastrosFicha_CriançaIHM_Load);
             this.panTIPOS_CADASTROSFicha.ResumeLayout(false);

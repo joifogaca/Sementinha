@@ -57,30 +57,32 @@
     <Compile Include="Classes\Escolas.cs" />
     <Compile Include="Classes\Família.cs" />
     <Compile Include="Classes\Frequentadores.cs" />
-    <Compile Include="Formulários\frmFrequentadoresFicha_CriançaIHM.cs">
+    <Compile Include="Formulários.cs" />
+    <Compile Include="Formulários\frmFrequentadoresFicha_Criança.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\frmFrequentadoresFicha_CriançaIHM.Designer.cs">
-      <DependentUpon>frmFrequentadoresFicha_CriançaIHM.cs</DependentUpon>
+    <Compile Include="Formulários\frmFrequentadoresFicha_Criança.Designer.cs">
+      <DependentUpon>frmFrequentadoresFicha_Criança.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\frmFrequentadoresIHM.cs">
+    <Compile Include="Formulários\frmFrequentadores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\frmFrequentadoresIHM.Designer.cs">
-      <DependentUpon>frmFrequentadoresIHM.cs</DependentUpon>
+    <Compile Include="Formulários\frmFrequentadores.Designer.cs">
+      <DependentUpon>frmFrequentadores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\frmTipos_CadastrosFichaIHM.cs">
+    <Compile Include="Formulários\frmTipos_CadastrosFicha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\frmTipos_CadastrosFichaIHM.designer.cs">
-      <DependentUpon>frmTipos_CadastrosFichaIHM.cs</DependentUpon>
+    <Compile Include="Formulários\frmTipos_CadastrosFicha.designer.cs">
+      <DependentUpon>frmTipos_CadastrosFicha.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulários\frmTipos_CadastrosIHM.cs">
+    <Compile Include="Formulários\frmTipos_Cadastros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulários\frmTipos_CadastrosIHM.designer.cs">
-      <DependentUpon>frmTipos_CadastrosIHM.cs</DependentUpon>
+    <Compile Include="Formulários\frmTipos_Cadastros.designer.cs">
+      <DependentUpon>frmTipos_Cadastros.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrequentadoresBLL.cs" />
     <Compile Include="Funções.cs" />
     <Compile Include="INI.cs" />
     <Compile Include="Formulários\frmMain.cs">
@@ -94,20 +96,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reflection.cs" />
     <Compile Include="Classes\Tipos_Cadastros.cs" />
-    <EmbeddedResource Include="Formulários\frmFrequentadoresFicha_CriançaIHM.resx">
-      <DependentUpon>frmFrequentadoresFicha_CriançaIHM.cs</DependentUpon>
+    <Compile Include="Reflection_BLL.cs" />
+    <Compile Include="Reflection_Classe.cs" />
+    <Compile Include="Reflection_Formulário.cs" />
+    <Compile Include="Reflection_Tabela.cs" />
+    <EmbeddedResource Include="Formulários\frmFrequentadoresFicha_Criança.resx">
+      <DependentUpon>frmFrequentadoresFicha_Criança.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\frmFrequentadoresIHM.resx">
-      <DependentUpon>frmFrequentadoresIHM.cs</DependentUpon>
+    <EmbeddedResource Include="Formulários\frmFrequentadores.resx">
+      <DependentUpon>frmFrequentadores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulários\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\frmTipos_CadastrosFichaIHM.resx">
-      <DependentUpon>frmTipos_CadastrosFichaIHM.cs</DependentUpon>
+    <EmbeddedResource Include="Formulários\frmTipos_CadastrosFicha.resx">
+      <DependentUpon>frmTipos_CadastrosFicha.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulários\frmTipos_CadastrosIHM.resx">
-      <DependentUpon>frmTipos_CadastrosIHM.cs</DependentUpon>
+    <EmbeddedResource Include="Formulários\frmTipos_Cadastros.resx">
+      <DependentUpon>frmTipos_Cadastros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

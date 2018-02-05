@@ -8,8 +8,8 @@ namespace Sementinha
     class Funções
     {
         public static string fncRetornaNomePropriedade(string Nome_Classe, string Nome_Controle)
-        {
-            //Nome_Campo = Panel_Genérico.Controls[i].Name.Substring(3 + Nome_Classe.Length , Panel_Genérico.Controls[i].Name.Length - 3 - Nome_Classe.Length);
+        {   //Exemplo: Classe: Frequentadores | Controle: txtFREQUENTADORESdata_nascimento >>>> Retorna: data_nascimento
+            
             return Nome_Controle.Substring(3 + Nome_Classe.Length,
                                            Nome_Controle.Length - 3 - Nome_Classe.Length);
         }
